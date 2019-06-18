@@ -12,7 +12,56 @@
 </head>
 
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center">
+        <div id="opponent"></div>
+      </div>
+    </div>
+    <div class="row text-center pt-2">
+      <div class="col">
+        <button class="btn btn-dark btn-lg btn-block"
+          onclick="app.controllers.opponentController.resetGame()">Reset</button>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-3">
+      <div class="col-2 mr-3">
+        <h5 class="ml-3">Attacks: </h5>
+      </div>
+      <div class="col-3 text-center">
+        <button class="btn btn-lg btn-block btn-info"
+          onclick="app.controllers.opponentController.slapOpp()">Slap!</button>
+      </div>
+      <div class="col-3 text-center">
+        <button class="btn btn-lg btn-block btn-danger"
+          onclick="app.controllers.opponentController.punchOpp()">Punch!</button>
+      </div>
+      <div class="col-3 text-center">
+        <button class="btn btn-lg btn-block btn-warning"
+          onclick="app.controllers.opponentController.kickOpp()">Kick!</button>
+      </div>
+    </div>
+    <!-- <div class="row justify-content-center pt-3">
+      <div class="col-2 mr-3">
+        <h5>Modifiers:</h5>
+      </div>
+      <div class="col-3 text-center">
+        <button class="btn btn-lg btn-block btn-danger"
+          onclick="app.controllers.opponentController.slapOpp()">Fire</button>
+      </div>
+      <div class="col-3 text-center">
+        <button class="btn btn-lg btn-block btn-warning"
+          onclick="app.controllers.opponentController.punchOpp()">Shock</button>
+      </div>
+      <div class="col-3 text-center">
+        <button class="btn btn-lg btn-block btn-primary"
+          onclick="app.controllers.opponentController.kickOpp()">Shield</button>
+      </div>
+    </div> -->
+  </div>
 
+
+  <script src="app/main.js" type="module"></script>
 </body>
 
 </html>
